@@ -1,10 +1,14 @@
+import styles from "../page.module.css";
+
 export default function Projects() {
     return (
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-            nobis vero quasi alias nisi optio libero nihil repellendus iste
-            excepturi laborum animi sunt doloremque velit accusamus impedit unde
-            iure saepe!
-        </p>
+        <article className={styles["flex_container_col"]}>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                dolore illum animi illo odit consectetur mollitia soluta eveniet
+                ipsa aliquam ut autem et modi libero repellendus distinctio qui,
+                consequatur a.
+            </p>
+        </article>
     );
 }
