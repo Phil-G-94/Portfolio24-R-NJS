@@ -68,7 +68,7 @@
 }
 
 .project_info_icon {
-    grid: "icon";
+    grid-area: "icon";
 }
 
 .contact_flex_container_row {
