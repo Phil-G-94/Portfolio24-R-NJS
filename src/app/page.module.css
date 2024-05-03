@@ -33,7 +33,7 @@
 .project_flex_container_col {
     display: flex;
     flex-direction: column;
-    place-content: center;
+    align-content: center;
     gap: 2rem;
 }
 
@@ -81,9 +81,9 @@
     margin: 2.5em;
 }
 
-.svgA:hover,
-.svgB:hover,
-.svgC:hover {
+.linkedin_svg:hover,
+.github_svg:hover,
+.discord_svg:hover {
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-duration: 2s;

@@ -78,4 +78,8 @@ body {
     html {
         color-scheme: dark;
     }
+
+    svg {
+        fill: white;
+    }
 }
