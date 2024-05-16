@@ -1,9 +1,10 @@
-export default function ProjectDetail(project) {
+export default function ProjectDetail({ project }) {
+    console.log(project.title);
+
     return (
         <div>
             <p>{project.title}</p>
             <p>{project.description}</p>
-            <p></p>
         </div>
     );
 }

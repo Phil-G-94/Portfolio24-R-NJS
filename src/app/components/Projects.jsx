@@ -1,8 +1,12 @@
 import styles from "../page.module.css";
-import projects from "../data/projects";
+import { getProjects } from "../data/database";
 import Link from "next/link";
 
-export default function Projects() {
+export default async function Projects() {
+    const projects = await getProjects();
+
+    console.log(projects);
+
     return (
         <article>
             <h2>Projects</h2>
@@ -19,8 +23,8 @@ export default function Projects() {
                     {projects.map((project) => {
                         return (
                             <Link
-                                key={project.id}
-                                href="/"
+                                key={project._id}
+                                href={`/projects/${project._id}`}
                                 className={styles["project_info_link"]}
                             >
                                 <div className={styles["project_info_grid"]}>
