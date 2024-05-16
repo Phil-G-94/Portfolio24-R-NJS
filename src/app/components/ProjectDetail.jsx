@@ -1,3 +1,9 @@
-export default function ProjectDetail() {
-    return;
+export default function ProjectDetail({ project }) {
+    return (
+        <div>
+            <p>{project.title}</p>
+            <p>{project.description}</p>
+            <p></p>
+        </div>
+    );
 }
