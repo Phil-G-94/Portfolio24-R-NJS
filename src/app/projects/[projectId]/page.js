@@ -1,24 +1,28 @@
 import ProjectDetail from "@/app/components/ProjectDetail";
 import { MongoClient } from "mongodb";
 import { ObjectId } from "mongodb";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 
-export async function generateStaticParams() {
-    const client = await MongoClient.connect("mongodb+srv://philipposgeorgiou7:7Oa0sLuPRLzh6Dj3@cluster0.0fp99ys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
-    const db = client.db("Projects");
+// export async function generateStaticParams() {
+//     const client = await MongoClient.connect(`mongodb+srv://${process.env.MDB_UN}:${process.env.MDB_PW}@cluster0.0fp99ys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`);
 
-    const projects = await db.collection("projects").find({}, { _id: 1 }).toArray();
+//     const db = client.db("Projects");
 
-    client.close();
+//     const projects = await db.collection("projects").find({}, { _id: 1 }).toArray();
 
-    return projects.map((project) => ({
-        projectId: project._id.toString(),
-    }));
-}
+//     client.close();
+
+//     return projects.map((project) => ({
+//         projectId: project._id.toString(),
+//     }));
+// }
 
 async function getProject(params) {
-    const client = await MongoClient.connect("mongodb+srv://philipposgeorgiou7:7Oa0sLuPRLzh6Dj3@cluster0.0fp99ys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+    const client = await MongoClient.connect(`mongodb+srv://${process.env.MDB_UN}:${process.env.MDB_PW}@cluster0.0fp99ys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`);
 
     const db = client.db("Projects");
 
