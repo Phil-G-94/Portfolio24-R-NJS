@@ -1,10 +1,11 @@
-export default function ProjectDetail({ project }) {
-    console.log(project.title);
+import styles from "../page.module.css";
 
+export default function ProjectDetail({ project }) {
     return (
-        <div>
-            <p>{project.title}</p>
+        <article className={styles["flex_container_col"]}>
+            <h2>{project.title}</h2>
+
             <p>{project.description}</p>
-        </div>
+        </article>
     );
 }

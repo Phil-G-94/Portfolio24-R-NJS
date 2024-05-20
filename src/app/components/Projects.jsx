@@ -5,8 +5,6 @@ import Link from "next/link";
 export default async function Projects() {
     const projects = await getProjects();
 
-    console.log(projects);
-
     return (
         <article>
             <h2>Projects</h2>
