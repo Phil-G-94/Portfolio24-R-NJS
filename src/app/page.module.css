@@ -11,10 +11,15 @@
     place-items: center;
 }
 
-/* section styles */
+/* component styles */
 
+/* AboutMe */
 .centered_title {
     text-align: center;
+}
+
+.min_width_50 {
+    min-width: 50%;
 }
 
 .about_me p {
@@ -22,12 +27,17 @@
     text-align: left;
 }
 
+/* Projects */
 .project_info_link {
-    background-color: #efebce;
-    border-radius: 1rem;
     padding: 1rem;
     margin-top: 2em;
     width: 100%;
+    background: rgba(167, 90, 231, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.208);
 }
 
 .project_info_link:hover {
@@ -55,9 +65,17 @@
 
 .project_info_icon {
     grid-area: "icon";
-    fill: black;
+    fill: white;
 }
 
+/* Project Detail */
+
+.back_btn {
+    margin: 0.75em;
+    font: 900;
+}
+
+/* Contact */
 .contact_flex_container_row {
     display: flex;
     flex-direction: row;
@@ -89,7 +107,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 663px) {
 }
 
 @media screen and (min-width: 1024px) {

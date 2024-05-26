@@ -6,7 +6,6 @@ import styles from "./page.module.css";
 export default function Home() {
     return (
         <>
-            <header></header>
             <main className={styles["flex_container_col"]}>
                 <h1>Welcome to my portfolio website!</h1>
                 <section>
@@ -15,7 +14,7 @@ export default function Home() {
                 <section className={styles["about_me"]}>
                     <AboutMe />
                 </section>
-                <section style={{ minWidth: "50%" }}>
+                <section className={styles["min_width_50"]}>
                     <Projects />
                 </section>
             </main>

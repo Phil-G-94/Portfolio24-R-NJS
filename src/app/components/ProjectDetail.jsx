@@ -4,7 +4,7 @@ import styles from "../page.module.css";
 export default function ProjectDetail({ project }) {
     return (
         <article className={styles["flex_container_col"]}>
-            <button>
+            <button className={styles["back_btn"]}>
                 <Link href="../">Back</Link>
             </button>
 
