@@ -9,14 +9,13 @@ export default function Home() {
             <header></header>
             <main className={styles["flex_container_col"]}>
                 <h1>Welcome to my portfolio website!</h1>
-                <section id="contact">
+                <section>
                     <Contact />
                 </section>
-                <section id="about-me">
-
+                <section className={styles["about_me"]}>
                     <AboutMe />
                 </section>
-                <section id="projects">
+                <section style={{ minWidth: "50%" }}>
                     <Projects />
                 </section>
             </main>
