@@ -3,8 +3,8 @@ import styles from "../page.module.css";
 export default function AboutMe() {
     return (
         <>
-            <h2 className={styles["centered_title"]}>About Me</h2>
             <article className={styles["flex_container_col"]}>
+                <h2 className={styles["centered_title"]}>About Me</h2>
                 <p>
                     Hi, thanks for stopping by. My name is Phil Georgiou and I
                     am a JavaScript developer.
