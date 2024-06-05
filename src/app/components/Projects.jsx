@@ -9,16 +9,6 @@ export default async function Projects() {
         <>
             <article>
                 <h2 className={styles["centered_title"]}>Projects</h2>
-                {/* <section>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis dolore illum animi illo odit consectetur mollitia
-                    soluta eveniet ipsa aliquam ut autem et modi libero
-                    repellendus distinctio qui, consequatur a.
-                </p>
-            </section> */}
-            </article>
-            <section>
                 <div className={styles["flex_container_col"]}>
                     {projects.map((project) => {
                         return (
@@ -61,7 +51,7 @@ export default async function Projects() {
                         );
                     })}
                 </div>
-            </section>
+            </article>
         </>
     );
 }

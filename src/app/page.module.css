@@ -14,7 +14,7 @@
 .flex_container_row {
     display: flex;
     flex-direction: row;
-    /* place-items: center; */
+    place-items: flex-end;
 }
 
 /* component styles */
@@ -99,31 +99,14 @@
 
 /* Skills */
 
-.skills_grid {
-    display: grid;
-    grid-template-areas:
-        "frontend-1" "frontend-2",
-        "database-1" "database-1",
-        "backend-1" "backend-2";
+.skills {
+    display: flex;
+    flex-direction: row;
 }
 
-.frontend-1 {
-    grid-area: "frontend-1";
-}
-.frontend-2 {
-    grid-area: "frontend-2";
-}
-
-.database-1 {
-    grid-area: "database-1";
-}
-
-.backend-1 {
-    grid-area: "backend-1";
-}
-
-.backend-2 {
-    grid-area: "backend-2";
+.skills > svg {
+    width: 6.8em;
+    height: 6.8em;
 }
 
 /* media queries */
