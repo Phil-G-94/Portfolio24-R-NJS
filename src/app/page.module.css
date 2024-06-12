@@ -103,9 +103,12 @@
     margin: 2.5em;
 }
 
-.linkedin_svg:hover,
-.github_svg:hover,
-.discord_svg:hover {
+.contact_sprite {
+    width: 4.5em;
+    height: 4.5em;
+}
+
+.contact_sprite:hover {
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-duration: 2s;
@@ -117,13 +120,14 @@
 .skills {
     display: flex;
     flex-direction: row;
-    gap: 0.5em;
+    gap: 4em;
 }
 
-.skills > svg {
+.skills_sprites {
     width: 6.8em;
     height: 6.8em;
     margin-bottom: 0.5em;
+    fill: yellow;
 }
 
 /* media queries */
