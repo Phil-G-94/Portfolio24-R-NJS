@@ -106,13 +106,31 @@
 .contact_sprite {
     width: 4.5em;
     height: 4.5em;
+    fill: white;
 }
 
 .contact_sprite:hover {
     animation-timing-function: ease;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
-    transform: scale(1.2);
+    animation-duration: 4s;
+    transform: scale(1);
+}
+
+.linkedin_sprite:hover {
+    fill: #0077b5;
+    background-color: white;
+    border-radius: 0.372em;
+}
+
+.github_sprite:hover {
+    fill: #ffffff;
+    background-color: #554568;
+    border: transparent;
+    border-radius: 100%;
+}
+
+.discord_sprite:hover {
+    fill: #7b84e7;
 }
 
 /* Skills */

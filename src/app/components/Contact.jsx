@@ -7,21 +7,27 @@ export default function Contact() {
             <ul className={styles["contact_flex_container_row"]}>
                 <li>
                     <Link href="">
-                        <svg className={styles["contact_sprite"]}>
+                        <svg
+                            className={`${styles["contact_sprite"]} ${styles["linkedin_sprite"]}`}
+                        >
                             <use href="/img/contactSprites.svg#linkedin"></use>
                         </svg>
                     </Link>
                 </li>
                 <li>
                     <Link href="">
-                        <svg className={styles["contact_sprite"]}>
+                        <svg
+                            className={`${styles["contact_sprite"]} ${styles["github_sprite"]}`}
+                        >
                             <use href="/img/contactSprites.svg#github"></use>
                         </svg>
                     </Link>
                 </li>
                 <li>
                     <Link href="">
-                        <svg className={styles["contact_sprite"]}>
+                        <svg
+                            className={`${styles["contact_sprite"]} ${styles["discord_sprite"]}`}
+                        >
                             <use href="/img/contactSprites.svg#discord"></use>
                         </svg>
                     </Link>
