@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <>
             <main className={styles["flex_container_col"]}>
-                <h1>Welcome to my portfolio website!</h1>
+                <h1 className={styles["centered_title"]}>Phil Georgiou</h1>
                 <section>
                     <Contact />
                 </section>

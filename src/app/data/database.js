@@ -6,12 +6,15 @@ import dotenv from "dotenv";
 dotenv.config();
 
 async function getProject(params) {
-
-    const client = await MongoClient.connect(`mongodb+srv://${process.env.MDB_UN}:${process.env.MDB_PW}@cluster0.0fp99ys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`);
+    const client = await MongoClient.connect(
+        `mongodb+srv://${process.env.MDB_UN}:${process.env.MDB_PW}@cluster0.0fp99ys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+    );
 
     const db = client.db("Projects");
 
-    const selectedProject = await db.collection("projects").findOne({ _id: ObjectId.createFromHexString(params.projectId) });
+    const selectedProject = await db
+        .collection("projects")
+        .findOne({ _id: ObjectId.createFromHexString(params.projectId) });
 
     client.close();
 
@@ -19,8 +22,9 @@ async function getProject(params) {
 }
 
 async function getProjects() {
-
-    const client = await MongoClient.connect(`mongodb+srv://${process.env.MDB_UN}:${process.env.MDB_PW}@cluster0.0fp99ys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`);
+    const client = await MongoClient.connect(
+        `mongodb+srv://${process.env.MDB_UN}:${process.env.MDB_PW}@cluster0.0fp99ys.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+    );
 
     const db = client.db("Projects");
 
@@ -29,7 +33,6 @@ async function getProjects() {
     client.close();
 
     return projects;
-
 }
 
 export { getProject, getProjects };

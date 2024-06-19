@@ -12,7 +12,7 @@ export default function AboutMe() {
                         <br />
                         Outside of code, my interests include current affairs,
                         music, gaming and martial arts.
-                        <br />I am looking for entry-level roles as a Front End
+                        <br />I am looking for entry-level roles as a Frontend
                         or Fullstack Developer utilising the MERN stack &#40;or
                         others!&#41;.
                     </p>
