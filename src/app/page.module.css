@@ -113,7 +113,7 @@
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-duration: 4s;
-    transform: scale(1);
+    transform: scale(1.2);
 }
 
 .skills {
@@ -124,7 +124,6 @@
 }
 
 .skills_sprites {
-    /* https://stackoverflow.com/questions/25940741/making-svg-responsive */
     width: 8.2em;
     height: 8.2em;
 }
