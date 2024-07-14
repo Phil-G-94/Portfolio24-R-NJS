@@ -5,6 +5,21 @@ SVGs / icons - https://icons.getbootstrap.com/
 
 */
 
+/* vars */
+
+/* CSS HEX */
+:root {
+    --port-alice-blue: #f4faffff;
+    --port-platinum: #dee7e7ff;
+    --port-thistle: #b7adcfff;
+
+    --port-slate-gray: #66818f;
+    --port-paynes-gray: #4f646fff;
+    --port-davys-gray: #535657ff;
+
+    --port-night: #141515ff;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -79,7 +94,13 @@ body {
         color-scheme: dark;
     }
 
-    .contact_sprites {
-        color: currentColor;
+    body {
+        background-color: var(--port-night);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        color-scheme: light;
     }
 }

@@ -55,12 +55,12 @@
     padding: 1rem;
     margin-top: 2em;
     width: 100%;
-    background: rgba(167, 90, 231, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5.5px);
-    -webkit-backdrop-filter: blur(5.5px);
+    background: var(--port-paynes-gray);
+    box-shadow: 0 4px 12px 0 var(--port-davys-gray);
+    /* backdrop-filter: blur(0.85em);
+    -webkit-backdrop-filter: blur(5.5px); */
     border-radius: 1em;
-    border: 1px solid rgba(255, 255, 255, 0.208);
+    border: 1px solid var(--port-davys-gray);
     animation: fadein 4s;
 }
 
@@ -68,7 +68,8 @@
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-duration: 2s;
-    transform: scale(1.1);
+    transform: scale(1.025);
+    background-color: var(--port-slate-gray);
 }
 
 .project_info_grid {
@@ -77,6 +78,7 @@
         "title"
         "description"
         "icon";
+    font-size: 1rem;
 }
 
 .project_info_title {
@@ -89,7 +91,7 @@
 
 .project_info_icon {
     grid-area: "icon";
-    fill: white;
+    fill: var(--port-platinum);
 }
 
 /* Project Detail */
@@ -113,7 +115,7 @@
 .contact_sprite {
     width: 4.5em;
     height: 4.5em;
-    fill: white;
+    fill: var(--port-platinum);
 }
 
 .contact_sprite:hover {
@@ -133,6 +135,10 @@
 .skills_sprites {
     width: 8.2em;
     height: 8.2em;
+}
+
+.error_sprite {
+    fill: var(--port-platinum);
 }
 
 /* media queries */

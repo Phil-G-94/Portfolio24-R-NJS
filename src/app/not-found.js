@@ -14,7 +14,7 @@ export default function NotFound() {
                 head <Link href="../">back</Link>
             </p>
 
-            <svg style={{ fill: "white" }}>
+            <svg className={styles["error_sprite"]}>
                 <use href="/img/errorSprites.svg#page-not-found"></use>
             </svg>
         </div>

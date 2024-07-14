@@ -16,7 +16,7 @@ export default function Error({ error, reset }) {
 
             <p>Something isn&apos;t quite right. </p>
 
-            <svg style={{ fill: "white" }}>
+            <svg className={styles["error_sprite"]}>
                 <use href="/img/errorSprites.svg#app-error"></use>
             </svg>
             <div>
