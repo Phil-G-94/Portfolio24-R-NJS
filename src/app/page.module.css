@@ -55,10 +55,10 @@
     padding: 1rem;
     margin-top: 2em;
     width: 100%;
-    background: var(--port-paynes-gray);
-    box-shadow: 0 4px 12px 0 var(--port-davys-gray);
-    /* backdrop-filter: blur(0.85em);
-    -webkit-backdrop-filter: blur(5.5px); */
+    background: var(--saffron);
+    box-shadow: 0 4px 12px 0 var(--glaucous);
+    backdrop-filter: blur(0.85em);
+    -webkit-backdrop-filter: blur(5.5px);
     border-radius: 1em;
     border: 1px solid var(--port-davys-gray);
     animation: fadein 4s;
@@ -68,8 +68,12 @@
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-duration: 2s;
-    transform: scale(1.025);
-    background-color: var(--port-slate-gray);
+    transform: scale(1.015);
+    background-color: var(--naples);
+}
+
+.project_info_link:visited {
+    color: var(--davys-gray);
 }
 
 .project_info_grid {
@@ -91,7 +95,7 @@
 
 .project_info_icon {
     grid-area: "icon";
-    fill: var(--port-platinum);
+    fill: var(--davys-gray);
 }
 
 /* Project Detail */
@@ -115,7 +119,7 @@
 .contact_sprite {
     width: 4.5em;
     height: 4.5em;
-    fill: var(--port-platinum);
+    fill: var(--ash-gray);
 }
 
 .contact_sprite:hover {
@@ -138,7 +142,7 @@
 }
 
 .error_sprite {
-    fill: var(--port-platinum);
+    fill: var(--ash-gray);
 }
 
 /* media queries */

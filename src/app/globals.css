@@ -9,15 +9,13 @@ SVGs / icons - https://icons.getbootstrap.com/
 
 /* CSS HEX */
 :root {
-    --port-alice-blue: #f4faffff;
-    --port-platinum: #dee7e7ff;
-    --port-thistle: #b7adcfff;
-
-    --port-slate-gray: #66818f;
-    --port-paynes-gray: #4f646fff;
-    --port-davys-gray: #535657ff;
-
-    --port-night: #141515ff;
+    --naples: #ebcc5c;
+    --saffron: #e8c547ff;
+    --jet: #30323dff;
+    --davys-gray: #4d5061ff;
+    --silver-lake-blue: #6e8ec4;
+    --glaucous: #5c80bcff;
+    --ash-gray: #cdd1c4ff;
 }
 
 /*
@@ -95,7 +93,8 @@ body {
     }
 
     body {
-        background-color: var(--port-night);
+        background-color: var(--jet);
+        color: var(--ash-gray);
     }
 }
 
