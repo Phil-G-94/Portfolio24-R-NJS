@@ -19,13 +19,42 @@
 .flex_container_col {
     display: flex;
     flex-direction: column;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .flex_container_row {
     display: flex;
     flex-direction: row;
     place-items: flex-end;
+}
+
+/* home page layout */
+
+.home_page_layout {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.title_section {
+    grid-column: 2 / 3;
+    text-align: center;
+}
+
+.contact_section {
+    grid-column: 2 / 3;
+}
+
+.about_me_section {
+    grid-column: 2 / 3;
+}
+
+.projects_section {
+    grid-column: 2 / 3;
+}
+
+.skills_section {
+    grid-column: 2 / 3;
 }
 
 /* component styles */
@@ -79,22 +108,22 @@
 .project_info_grid {
     display: grid;
     grid-template-areas:
-        "title"
-        "description"
-        "icon";
+        "project_title"
+        "project_description"
+        "project_icon";
     font-size: 1rem;
 }
 
 .project_info_title {
-    grid-area: "title";
+    grid-area: "project_title";
 }
 
 .project_info_description {
-    grid-area: "description";
+    grid-area: "project_description";
 }
 
 .project_info_icon {
-    grid-area: "icon";
+    grid-area: "project_icon";
     fill: var(--davys-gray);
 }
 
@@ -106,7 +135,7 @@
 }
 
 /* Contact */
-.contact_flex_container_row {
+.contact_flex_container {
     display: flex;
     flex-direction: row;
     place-content: center;
@@ -126,7 +155,7 @@
     animation-timing-function: ease;
     animation-iteration-count: infinite;
     animation-duration: 4s;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .skills {
@@ -169,5 +198,36 @@
     .project_info_icon {
         justify-self: self-end;
         margin-top: -3.5em;
+    }
+
+    .contact_flex_container {
+        display: inherit;
+        flex-direction: column;
+    }
+
+    .home_page_layout {
+        display: grid;
+        grid-template: auto 1fr auto / auto 1fr auto;
+    }
+
+    .title_section {
+        grid-column: 2 / 3;
+        text-align: center;
+    }
+
+    .contact_section {
+        grid-column: 1 / 2;
+    }
+
+    .about_me_section {
+        grid-column: 2 / 3;
+    }
+
+    .projects_section {
+        grid-column: 2 / 3;
+    }
+
+    .skills_section {
+        grid-column: 2 / 3;
     }
 }

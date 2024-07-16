@@ -4,7 +4,7 @@ import styles from "../page.module.css";
 export default function Contact() {
     return (
         <>
-            <ul className={styles["contact_flex_container_row"]}>
+            <ul className={styles["contact_flex_container"]}>
                 <li>
                     <Link href="">
                         <svg className={styles["contact_sprite"]}>

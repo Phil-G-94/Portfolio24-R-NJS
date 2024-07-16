@@ -8,19 +8,23 @@ export default function Home() {
     return (
         <>
             <main className={styles["flex_container_col"]}>
-                <h1 className={styles["centered_title"]}>Phil Georgiou</h1>
-                <section>
-                    <Contact />
-                </section>
-                <section className={styles["about_me"]}>
-                    <AboutMe />
-                </section>
-                <section className={styles["min_width_50"]}>
-                    <Projects />
-                </section>
-                <section>
-                    <Skills />
-                </section>
+                <div className={styles["home_page_layout"]}>
+                    <h1 className={styles["title_section"]}>Phil Georgiou</h1>
+                    <section className={styles["contact_section"]}>
+                        <Contact />
+                    </section>
+                    <section className={styles["about_me_section"]}>
+                        {/* className={styles["about_me"]} */}
+                        <AboutMe />
+                    </section>
+                    <section className={styles["projects_section"]}>
+                        {/* className={styles["min_width_50"]} */}
+                        <Projects />
+                    </section>
+                    <section className={styles["skills_section"]}>
+                        <Skills />
+                    </section>
+                </div>
             </main>
         </>
     );
