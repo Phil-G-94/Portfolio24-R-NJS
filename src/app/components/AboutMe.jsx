@@ -1,22 +1,24 @@
-import styles from "../page.module.css";
-
 export default function AboutMe() {
     return (
         <>
-            <article className={styles["flex_container_col"]}>
-                <h2 className={styles["centered_title"]}>About Me</h2>
-                <div>
+            <article>
+                <h2 className="text-center">About Me</h2>
+                <section className="text-pretty">
+                    <p>Hey, I&apos;m Phil!</p>
                     <p>
-                        Hi, thanks for stopping by. My name is Phil Georgiou and
-                        I am a JavaScript developer.
-                        <br />
-                        Outside of code, my interests include current affairs,
-                        music, gaming and martial arts.
-                        <br />I am looking for entry-level roles as a Frontend
-                        or Fullstack Developer utilising the MERN stack &#40;or
-                        others!&#41;.
+                        London-based JavaScript developer skilled in React,
+                        Node.js/Express.js and Next.js developlment.
                     </p>
-                </div>
+                    <p>
+                        Comfortable working with SQL and noSQL databases, with
+                        or without the use of ORM tools.
+                    </p>
+                    <p>
+                        Passionate about crafting intuitive and seamless web
+                        experiences.
+                    </p>
+                    <p>Always keen to learn, and eager to contribute.</p>
+                </section>
             </article>
         </>
     );

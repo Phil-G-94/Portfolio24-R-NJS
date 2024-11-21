@@ -1,32 +1,34 @@
 import Link from "next/link";
-import styles from "../page.module.css";
 
 export default function Contact() {
+    const contactSprites = [
+        {
+            urlRef: "",
+            svgRef: "/img/contactSprites.svg#linkedin",
+        },
+        {
+            urlRef: "",
+            svgRef: "/img/contactSprites.svg#github",
+        },
+        {
+            urlRef: "",
+            svgRef: "/img/contactSprites.svg#discord",
+        },
+    ];
+
     return (
-        <>
-            <ul className={styles["contact_flex_container"]}>
-                <li>
-                    <Link href="">
-                        <svg className={styles["contact_sprite"]}>
-                            <use href="/img/contactSprites.svg#linkedin"></use>
-                        </svg>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="">
-                        <svg className={styles["contact_sprite"]}>
-                            <use href="/img/contactSprites.svg#github"></use>
-                        </svg>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="">
-                        <svg className={styles["contact_sprite"]}>
-                            <use href="/img/contactSprites.svg#discord"></use>
-                        </svg>
-                    </Link>
-                </li>
+        <section>
+            <ul className="flex flex-row justify-center gap-16">
+                {contactSprites.map((sprite) => {
+                    return (
+                        <Link href="" key={crypto.randomUUID()}>
+                            <svg className="size-16">
+                                <use href={sprite.svgRef}></use>
+                            </svg>
+                        </Link>
+                    );
+                })}
             </ul>
-        </>
+        </section>
     );
 }

@@ -1,12 +1,10 @@
 "use client";
 
-import styles from "./page.module.css";
-
 import Link from "next/link";
 
 export default function NotFound() {
     return (
-        <div className={styles["grid_container"]}>
+        <div>
             <h2>404: Page not found!</h2>
 
             <p>
@@ -14,7 +12,7 @@ export default function NotFound() {
                 head <Link href="../">back</Link>
             </p>
 
-            <svg className={styles["error_sprite"]}>
+            <svg>
                 <use href="/img/errorSprites.svg#page-not-found"></use>
             </svg>
         </div>

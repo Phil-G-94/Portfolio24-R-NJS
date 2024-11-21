@@ -1,4 +1,3 @@
-import styles from "../page.module.css";
 import { getProjects } from "../data/database";
 import Link from "next/link";
 
@@ -7,45 +6,28 @@ export default async function Projects() {
 
     return (
         <>
-            <article>
-                <h2 className={styles["centered_title"]}>Projects</h2>
-                <div className={styles["flex_container_col"]}>
+            <h2 className="text-center">Projects</h2>
+            <article className="flex flex-col sm:flex-col md:flex-row justify-center">
+                <div className="grid grid-cols-1 m-2 sm:grid-cols-2 md:grid-cols-3 gap-12">
                     {projects.map((project) => {
                         return (
                             <Link
                                 key={project._id}
                                 href={`/projects/${project._id}`}
-                                className={styles["project_info_link"]}
                             >
-                                <div className={styles["project_info_grid"]}>
-                                    <p className={styles["project_info_title"]}>
+                                <div className="border-solid border-2 rounded p-2 hover:-translate-y-1">
+                                    <p className="text-center">
                                         {project.title}
                                     </p>
-                                    <p
-                                        className={
-                                            styles["project_info_description"]
-                                        }
-                                    >
-                                        {project.description}
+                                    <p className="truncate">
+                                        {/* {project.description} */}
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Id dicta voluptas, in
+                                        fugiat consequatur ratione voluptatibus
+                                        modi rerum! Accusantium, consequuntur
+                                        natus! Facilis ratione hic fuga. Iusto
+                                        necessitatibus illo debitis nam.
                                     </p>
-
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="20"
-                                        height="20"
-                                        fill="currentColor"
-                                        viewBox="0 0 16 16"
-                                        className={styles["project_info_icon"]}
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                                        />
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                                        />
-                                    </svg>
                                 </div>
                             </Link>
                         );

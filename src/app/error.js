@@ -1,13 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import styles from "./page.module.css";
 
 import { useEffect } from "react";
 
 export default function Error({ error, reset }) {
     useEffect(() => {
-        console.log(error);
+        console.error(error);
     }, [error]);
 
     return (
@@ -16,7 +15,7 @@ export default function Error({ error, reset }) {
 
             <p>Something isn&apos;t quite right. </p>
 
-            <svg className={styles["error_sprite"]}>
+            <svg>
                 <use href="/img/errorSprites.svg#app-error"></use>
             </svg>
             <div>
