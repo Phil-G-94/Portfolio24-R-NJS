@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import "./globals.css";
 
 import { useEffect } from "react";
 
@@ -10,17 +11,18 @@ export default function Error({ error, reset }) {
     }, [error]);
 
     return (
-        <div className={styles["grid_container"]}>
-            <h2>Error!</h2>
+        <div className="flex flex-col justify-center items-center gap-16">
+            <h2 className="mt-12">Error!</h2>
 
             <p>Something isn&apos;t quite right. </p>
+            <p>Use the buttons below.</p>
 
             <svg>
                 <use href="/img/errorSprites.svg#app-error"></use>
             </svg>
-            <div>
-                <button onClick={() => reset()}>Try Again</button>
-                <button>
+            <div className="flex flex-row justify-center gap-10">
+                <button className="border-solid border-2 border-black rounded-md pl-2 pr-2" onClick={() => reset()}>Try Again</button>
+                <button className="border-solid border-2 border-black rounded-md pl-2 pr-2">
                     <Link href="/">Go Home</Link>
                 </button>
             </div>

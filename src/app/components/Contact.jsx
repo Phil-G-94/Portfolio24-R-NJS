@@ -22,7 +22,7 @@ export default function Contact() {
                 {contactSprites.map((sprite) => {
                     return (
                         <Link href="" key={crypto.randomUUID()}>
-                            <svg className="size-16">
+                            <svg className="size-14 hover:scale-105">
                                 <use href={sprite.svgRef}></use>
                             </svg>
                         </Link>
