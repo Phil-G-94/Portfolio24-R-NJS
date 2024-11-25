@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./globals.css";
 
 import { useEffect } from "react";
+import SvgIcon from "./components/SvgIcon";
 
 export default function Error({ error, reset }) {
     useEffect(() => {
@@ -17,11 +18,14 @@ export default function Error({ error, reset }) {
             <p>Something isn&apos;t quite right. </p>
             <p>Use the buttons below.</p>
 
-            <svg>
-                <use href="/img/errorSprites.svg#app-error"></use>
-            </svg>
+            <SvgIcon id="#app-error" />
             <div className="flex flex-row justify-center gap-10">
-                <button className="border-solid border-2 border-black rounded-md pl-2 pr-2" onClick={() => reset()}>Try Again</button>
+                <button
+                    className="border-solid border-2 border-black rounded-md pl-2 pr-2"
+                    onClick={() => reset()}
+                >
+                    Try Again
+                </button>
                 <button className="border-solid border-2 border-black rounded-md pl-2 pr-2">
                     <Link href="/">Go Home</Link>
                 </button>

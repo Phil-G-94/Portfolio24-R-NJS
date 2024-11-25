@@ -1,27 +1,18 @@
+import SvgIcon from "./SvgIcon";
+
 export default function Skills() {
     return (
         <article>
             <h2 className="text-center">Skills</h2>
             <div className="flex flex-row">
-                <svg>
-                    <use href="/img/skillsSprites.svg#js"></use>
-                </svg>
-
-                <svg>
-                    <use href="/img/skillsSprites.svg#react"></use>
-                </svg>
-
-                <svg>
-                    <use href="/img/skillsSprites.svg#mongodb"></use>
-                </svg>
-
-                <svg>
-                    <use href="/img/skillsSprites.svg#node"></use>
-                </svg>
-
-                <svg>
-                    <use href="/img/skillsSprites.svg#express"></use>
-                </svg>
+                <SvgIcon
+                    id="#js"
+                    className="text-yellow-500 stroke-black fill-black"
+                />
+                <SvgIcon id="#react" className="text-blue-800" />
+                <SvgIcon id="#mongodb" className="text-green-800" />
+                <SvgIcon id="#node" className="text-green-800" />
+                <SvgIcon id="#express" className="text-black" />
             </div>
         </article>
     );
