@@ -7,12 +7,25 @@ export default function Skills() {
             <div className="flex flex-row">
                 <SvgIcon
                     id="#js"
-                    className="text-yellow-500 stroke-black fill-black"
+                    className="fill-white stroke-black hover:fill-yellow-500 hover:stroke-black transition-colors size-2/4"
                 />
-                <SvgIcon id="#react" className="text-blue-800" />
-                <SvgIcon id="#mongodb" className="text-green-800" />
-                <SvgIcon id="#node" className="text-green-800" />
-                <SvgIcon id="#express" className="text-black" />
+
+                <SvgIcon
+                    id="#react"
+                    className="fill-black hover:[fill:#4ea8bd] transition-colors size-2/4"
+                />
+                <SvgIcon
+                    id="#mongodb"
+                    className=" hover:[fill:#00684a] transition-colors size-2/4"
+                />
+                <SvgIcon
+                    id="#node"
+                    className="hover:[fill:#5fa04e] transition-colors size-2/4"
+                />
+                <SvgIcon
+                    id="#express"
+                    className="stroke-1 hover:fill-white hover:stroke-black transition-colors size-2/4"
+                />
             </div>
         </article>
     );

@@ -7,20 +7,45 @@ import "./globals.css";
 export default function Home() {
     return (
         <>
-            <main>
+            <header className="flex justify-between">
                 <h1 className="text-4xl">Phil Georgiou</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-                    <section className="col-span-full md:col-start-2 md:col-end-4">
-                        <Contact />
-                    </section>
-                    <section className="col-span-full md:col-start-2 md:col-end-4">
+                <nav>
+                    <ul className="flex flex-row list-none gap-6 m-2">
+                        <li>
+                            <a href="about-me">About Me</a>
+                        </li>
+                        <li>
+                            <a href="projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div className="grid grid-cols-1 md:grid-cols-4">
+                    <section
+                        id="about-me"
+                        className="col-span-full md:col-start-2 md:col-end-4"
+                    >
                         <AboutMe />
                     </section>
                     <section className="col-span-full md:col-start-2 md:col-end-4">
+                        <Skills />
+                    </section>
+                    <section
+                        id="projects"
+                        className="col-span-full md:col-start-2 md:col-end-4"
+                    >
                         <Projects />
                     </section>
-                    <section className="col-span-full md:col-start-2 md:col-end-4">
-                        <Skills />
+
+                    <section
+                        id="contact"
+                        className="col-span-full md:col-start-2 md:col-end-4"
+                    >
+                        <Contact />
                     </section>
                 </div>
             </main>

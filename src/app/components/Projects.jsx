@@ -15,7 +15,7 @@ export default async function Projects() {
                                 key={project._id}
                                 href={`/projects/${project._id}`}
                             >
-                                <div className="border-solid border-2 rounded p-2 hover:-translate-y-1">
+                                <div className="border-solid border-2 rounded p-2 hover:-translate-y-1 transition-transform">
                                     <p className="text-center">
                                         {project.title}
                                     </p>
