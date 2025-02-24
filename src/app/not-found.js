@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import "./globals.css";
-import SvgIcon from "./components/SvgIcon";
 
 export default function NotFound() {
     return (
@@ -13,8 +12,6 @@ export default function NotFound() {
                 The page you are looking for does not exist. Check the URL or
                 head <Link href="../">back</Link>
             </p>
-
-            <SvgIcon id="#page-not-found" />
         </div>
     );
 }

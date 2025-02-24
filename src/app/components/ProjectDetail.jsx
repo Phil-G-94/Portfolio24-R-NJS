@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 export default function ProjectDetail({ project }) {
+    console.log(project);
+
     return (
         <article>
             <button>

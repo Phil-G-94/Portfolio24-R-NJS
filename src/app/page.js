@@ -41,12 +41,12 @@ export default function Home() {
                         <Projects />
                     </section>
 
-                    <section
+                    <footer
                         id="contact"
                         className="col-span-full md:col-start-2 md:col-end-4"
                     >
                         <Contact />
-                    </section>
+                    </footer>
                 </div>
             </main>
         </>
