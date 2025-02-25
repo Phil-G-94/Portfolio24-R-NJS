@@ -12,19 +12,19 @@ export default function Home() {
                 <nav>
                     <ul className="flex flex-row list-none gap-6 m-2">
                         <li>
-                            <a href="about-me">About Me</a>
+                            <a href="#about-me">About Me</a>
                         </li>
                         <li>
-                            <a href="projects">Projects</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a href="contact">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <main>
-                <div className="grid grid-cols-1 md:grid-cols-4">
+            <main className="container mx-auto">
+                <div className="grid grid-cols-1 gap-28 md:grid-cols-4">
                     <section
                         id="about-me"
                         className="col-span-full md:col-start-2 md:col-end-4"
