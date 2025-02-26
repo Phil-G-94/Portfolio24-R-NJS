@@ -1,4 +1,4 @@
-import SvgIcon from "./SvgIcon";
+"use client";
 
 export default function Skills() {
     return (

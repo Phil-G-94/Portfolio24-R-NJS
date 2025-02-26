@@ -1,5 +1,6 @@
+"use client";
+
 import Link from "next/link";
-import SvgIcon from "./SvgIcon";
 
 export default function Contact() {
     return (

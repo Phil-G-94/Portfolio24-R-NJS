@@ -3,25 +3,14 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import "./globals.css";
+import Navigation from "./components/Navigation";
 
 export default function Home() {
     return (
         <>
             <header className="flex justify-between">
                 <h1 className="text-4xl">Phil Georgiou</h1>
-                <nav>
-                    <ul className="flex flex-row list-none gap-6 m-2">
-                        <li>
-                            <a href="#about-me">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <Navigation />
             </header>
             <main className="container mx-auto">
                 <div className="grid grid-cols-1 gap-28 md:grid-cols-4">
