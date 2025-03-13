@@ -18,36 +18,31 @@ export default function ProjectsCarousel({ projects }) {
     };
 
     return (
-        <div>
-            {/* // Project Content  */}
-
+        <>
             <article>
-                <Link
-                    key={projects[currentIndex].id}
-                    href={`/projects/${projects[currentIndex].id}`}
-                >
-                    <div className="border-solid border-2 rounded p-2 ">
-                        <h3 className="text-center">
-                            {projects[currentIndex].title}
-                        </h3>
-                        <p className="truncate">
-                            {projects[currentIndex].description}
-                        </p>
-                    </div>
-                </Link>
-
-                {/* // Carousel Navigation  */}
-
-                <span className="flex justify-center">
+                <div className="flex flex-row justify-center gap-4">
                     <button onClick={prevProject}>
                         <ChevronLeftIcon className="size-5" />
                     </button>
+
+                    <Link
+                        key={projects[currentIndex].id}
+                        href={`/projects/${projects[currentIndex].id}`}
+                    >
+                        <div className="border-solid border-2 rounded p-2 ">
+                            <h3 className="text-center">
+                                {projects[currentIndex].title}
+                            </h3>
+                            <p className="truncate">
+                                {projects[currentIndex].description}
+                            </p>
+                        </div>
+                    </Link>
+
                     <button onClick={nextProject}>
                         <ChevronRightIcon className="size-5" />
                     </button>
-                </span>
-
-                {/* // Dots indicator */}
+                </div>
 
                 <div className="flex justify-center mt-4">
                     {projects.map((_, index) => (
@@ -62,6 +57,6 @@ export default function ProjectsCarousel({ projects }) {
                     ))}
                 </div>
             </article>
-        </div>
+        </>
     );
 }

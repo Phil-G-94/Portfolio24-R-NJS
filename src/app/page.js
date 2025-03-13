@@ -8,15 +8,16 @@ import Navigation from "./components/Navigation";
 export default function Home() {
     return (
         <>
-            <header className="flex justify-between">
+            <header className="flex flex-row justify-evenly ">
                 <h1 className="text-4xl">Phil Georgiou</h1>
                 <Navigation />
             </header>
+
             <main className="container mx-auto">
                 <div className="grid grid-cols-1 gap-28 md:grid-cols-4">
                     <section
                         id="about-me"
-                        className="col-span-full md:col-start-2 md:col-end-4"
+                        className="col-span-full  md:col-start-2 md:col-end-4"
                     >
                         <AboutMe />
                     </section>

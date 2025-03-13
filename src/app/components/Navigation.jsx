@@ -7,8 +7,8 @@ export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav>
-            <ul className="hidden list-none gap-6 md:flex md:flex-row md:m-2">
+        <nav className="m-2">
+            <ul className="hidden list-none gap-6 md:flex md:flex-row">
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
@@ -33,25 +33,25 @@ export default function Navigation() {
                 </button>
             </span>
 
-            {isOpen && (
-                <ul className="md:hidden flex flex-col items-center gap-4 m-2">
-                    <li>
-                        <a href="#about-me" onClick={() => setIsOpen(false)}>
-                            About Me
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects" onClick={() => setIsOpen(false)}>
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" onClick={() => setIsOpen(false)}>
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            )}
+            <ul
+                className={`md:hidden relative  transition-all ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+            >
+                <li>
+                    <a href="#about-me" onClick={() => setIsOpen(false)}>
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" onClick={() => setIsOpen(false)}>
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" onClick={() => setIsOpen(false)}>
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </nav>
     );
 }
