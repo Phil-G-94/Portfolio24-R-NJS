@@ -1,9 +1,11 @@
 import ProjectDetail from "@/app/components/ProjectDetail";
 
 export async function generateStaticParams() {
-    const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SITE_URL}/data/projects.json`
-    );
+    const baseUrl = process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000";
+
+    const res = await fetch(`${baseUrl}/data/projects.json`);
 
     const data = await res.json();
 
@@ -15,9 +17,7 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
     const { projectId } = await params;
 
-    const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SITE_URL}/data/projects.json`
-    );
+    const res = await fetch("/data/projects.json");
 
     const data = await res.json();
 

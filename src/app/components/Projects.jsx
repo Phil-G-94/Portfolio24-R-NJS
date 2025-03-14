@@ -1,9 +1,7 @@
 import ProjectsCarousel from "./ProjectsCarousel";
 
 export default async function Projects() {
-    const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SITE_URL}/data/projects.json`
-    );
+    const res = await fetch("/data/projects.json");
 
     const data = await res.json();
 
