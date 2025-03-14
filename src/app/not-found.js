@@ -1,4 +1,5 @@
 "use client";
+"use strict";
 
 import Link from "next/link";
 import "./globals.css";
