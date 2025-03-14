@@ -1,12 +1,11 @@
-import { promises as fs } from "fs";
 import ProjectDetail from "@/app/components/ProjectDetail";
 
 export async function generateStaticParams() {
-    const filePath = path.resolve(process.cwd(), "src/app/data/projects.json");
+    const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SITE_URL}/data/projects.json`
+    );
 
-    const file = await fs.readFile(filePath, "utf-8");
-
-    const data = JSON.parse(file);
+    const data = await res.json();
 
     const params = data.map((project) => ({ id: project.id.toString() }));
 
@@ -16,11 +15,11 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
     const { projectId } = await params;
 
-    const filePath = path.resolve(process.cwd(), "src/app/data/projects.json");
+    const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SITE_URL}/data/projects.json`
+    );
 
-    const file = await fs.readFile(filePath, "utf-8");
-
-    const data = JSON.parse(file);
+    const data = await res.json();
 
     const project = data.find((p) => p.id.toString() === projectId);
 

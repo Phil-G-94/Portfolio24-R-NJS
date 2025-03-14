@@ -1,14 +1,11 @@
-import fs from "fs/promises";
-
 import ProjectsCarousel from "./ProjectsCarousel";
 
 export default async function Projects() {
-    const file = await fs.readFile(
-        process.cwd() + "/src/app/data/projects.json",
-        "utf-8"
+    const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SITE_URL}/data/projects.json`
     );
 
-    const data = JSON.parse(file);
+    const data = await res.json();
 
     return (
         <>
