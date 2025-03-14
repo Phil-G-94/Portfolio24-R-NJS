@@ -1,7 +1,11 @@
 import ProjectsCarousel from "./ProjectsCarousel";
 
 export default async function Projects() {
-    const res = await fetch("/data/projects.json");
+    const baseUrl = process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000";
+
+    const res = await fetch(`${baseUrl}/data/projects.json`);
 
     const data = await res.json();
 

@@ -17,7 +17,11 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
     const { projectId } = await params;
 
-    const res = await fetch("/data/projects.json");
+    const baseUrl = process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000";
+
+    const res = await fetch(`${baseUrl}/data/projects.json`);
 
     const data = await res.json();
 
