@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 
     const params = data.map((project) => ({ id: project.id.toString() }));
 
-    return params;
+    return params.map((param) => ({ params: param }));
 }
 
 export default async function Page({ params }) {
