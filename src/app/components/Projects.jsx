@@ -4,12 +4,12 @@ import ProjectsCarousel from "./ProjectsCarousel";
 export default async function Projects() {
     return (
         <>
-            <h2 className="text-center">Projects</h2>
-            <section className="flex flex-col justify-center">
-                <article>
+            <h2 className="text-center text-lg">Projects</h2>
+            <article className="flex flex-col justify-center">
+                <section className="m-4">
                     <ProjectsCarousel projects={projects} />
-                </article>
-            </section>
+                </section>
+            </article>
         </>
     );
 }

@@ -7,7 +7,7 @@ export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="m-2">
+        <nav className="mt-2">
             <ul className="hidden list-none gap-6 md:flex md:flex-row">
                 <li>
                     <a href="#about-me">About Me</a>
@@ -20,7 +20,7 @@ export default function Navigation() {
                 </li>
             </ul>
 
-            <span className="flex items-center">
+            <span className="flex justify-center">
                 <button
                     className="md:hidden"
                     onClick={() => setIsOpen(!isOpen)}

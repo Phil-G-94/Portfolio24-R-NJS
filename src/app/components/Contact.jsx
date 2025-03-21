@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <section className="mt-2">
+        <section className="mt-2 mb-2">
             <ul className="flex flex-row justify-center gap-16">
                 <Link href="">
                     <svg

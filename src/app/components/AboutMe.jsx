@@ -4,8 +4,8 @@ export default function AboutMe() {
     return (
         <>
             <article>
-                <h2 className="text-center">About Me</h2>
-                <section className="text-pretty">
+                <h2 className="text-center text-lg">About Me</h2>
+                <section className="text-pretty m-4">
                     <p>Hey, I&apos;m Phil!</p>
                     <p>
                         London-based JavaScript developer skilled in React,
