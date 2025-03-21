@@ -1,7 +1,9 @@
+"use client";
+
 import projects from "../data/projects.json";
 import ProjectsCarousel from "./ProjectsCarousel";
 
-export default async function Projects() {
+export default function Projects() {
     return (
         <>
             <h2 className="text-center text-lg">Projects</h2>
