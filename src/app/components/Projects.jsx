@@ -1,6 +1,5 @@
 "use client";
-
-import projects from "../data/projects.json";
+import projects from "@/app/data/projects.json";
 import ProjectsCarousel from "./ProjectsCarousel";
 
 export default function Projects() {

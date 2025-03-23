@@ -45,7 +45,7 @@ export default function ProjectsCarousel({ projects }) {
                 </div>
 
                 <div className="flex justify-center mt-4">
-                    {projects.map((_, index) => (
+                    {projects?.map((_, index) => (
                         <div
                             key={index}
                             className={`h-2 w-2 mx-1 rounded-full ${
