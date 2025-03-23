@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function SocialLinks() {
     return (
-        <ul className="flex flex-row justify-center gap-16">
+        <ul className="flex flex-row justify-center gap-4">
             <Link href="">
                 <svg
                     id="linkedin"
