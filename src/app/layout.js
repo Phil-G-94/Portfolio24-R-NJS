@@ -1,6 +1,6 @@
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata = {
     title: "Phil Georgiou | Developer",
@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang="en" className="scroll-smooth bg-papaya-whip">
             <body className={inter.className}>{children}</body>
         </html>
     );

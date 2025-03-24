@@ -7,16 +7,31 @@ export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="mt-2">
+        <nav className="m-2">
             <ul className="hidden list-none gap-6 md:flex md:flex-row">
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a
+                        className="text-papaya-whip hover:underline decoration-barn-red decoration-4 underline-offset-8"
+                        href="#about-me"
+                    >
+                        About Me
+                    </a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a
+                        className="text-papaya-whip hover:underline decoration-barn-red decoration-4 underline-offset-8"
+                        href="#projects"
+                    >
+                        Projects
+                    </a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a
+                        className="text-papaya-whip hover:underline decoration-barn-red decoration-4 underline-offset-8"
+                        href="#contact"
+                    >
+                        Contact
+                    </a>
                 </li>
             </ul>
 
@@ -26,9 +41,9 @@ export default function Navigation() {
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? (
-                        <XMarkIcon className="size-6" />
+                        <XMarkIcon className="size-6 stroke-papaya-whip" />
                     ) : (
-                        <Bars3Icon className="size-6" />
+                        <Bars3Icon className="size-6 stroke-papaya-whip" />
                     )}
                 </button>
             </span>
@@ -37,17 +52,29 @@ export default function Navigation() {
                 className={`md:hidden relative  transition-all ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
             >
                 <li>
-                    <a href="#about-me" onClick={() => setIsOpen(false)}>
+                    <a
+                        className="text-papaya-whip hover:underline decoration-barn-red decoration-2 underline-offset-4"
+                        href="#about-me"
+                        onClick={() => setIsOpen(false)}
+                    >
                         About Me
                     </a>
                 </li>
                 <li>
-                    <a href="#projects" onClick={() => setIsOpen(false)}>
+                    <a
+                        className="text-papaya-whip hover:underline decoration-barn-red decoration-2 underline-offset-4"
+                        href="#projects"
+                        onClick={() => setIsOpen(false)}
+                    >
                         Projects
                     </a>
                 </li>
                 <li>
-                    <a href="#contact" onClick={() => setIsOpen(false)}>
+                    <a
+                        className="text-papaya-whip hover:underline decoration-barn-red decoration-2 underline-offset-4"
+                        href="#contact"
+                        onClick={() => setIsOpen(false)}
+                    >
                         Contact
                     </a>
                 </li>

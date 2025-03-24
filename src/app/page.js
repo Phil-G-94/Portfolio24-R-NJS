@@ -8,8 +8,8 @@ import Navigation from "./components/Navigation";
 export default function Home() {
     return (
         <>
-            <header className="flex flex-row justify-between">
-                <h1 className="text-4xl">Phil Georgiou</h1>
+            <header className="flex flex-row justify-between bg-prussian-blue p-6">
+                <h1 className="text-4xl text-papaya-whip">Phil Georgiou</h1>
                 <Navigation />
             </header>
 
