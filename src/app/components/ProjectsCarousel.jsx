@@ -22,25 +22,25 @@ export default function ProjectsCarousel({ projects }) {
             <article>
                 <div className="flex flex-row justify-center gap-4">
                     <button onClick={prevProject}>
-                        <ChevronLeftIcon className="size-5" />
+                        <ChevronLeftIcon className="size-10 stroke-prussian-blue active:stroke-blue-gray" />
                     </button>
 
                     <Link
                         key={projects[currentIndex].id}
                         href={`/projects/${projects[currentIndex].id}`}
                     >
-                        <div className="border-solid border-2 rounded p-2 ">
+                        <div className="flex flex-col justify-center border-solid border-2 border-prussian-blue rounded-lg p-2 w-96 h-40 shadow-black shadow-md">
                             <h3 className="text-center">
                                 {projects[currentIndex].title}
                             </h3>
-                            <p className="truncate">
+                            <p className="overflow-hidden text-ellipsis line-clamp-2 text-center">
                                 {projects[currentIndex].description}
                             </p>
                         </div>
                     </Link>
 
                     <button onClick={nextProject}>
-                        <ChevronRightIcon className="size-5" />
+                        <ChevronRightIcon className="size-10 stroke-prussian-blue active:stroke-blue-gray" />
                     </button>
                 </div>
 
@@ -50,8 +50,8 @@ export default function ProjectsCarousel({ projects }) {
                             key={index}
                             className={`h-2 w-2 mx-1 rounded-full ${
                                 index === currentIndex
-                                    ? "bg-gray-800"
-                                    : "bg-gray-400"
+                                    ? "bg-prussian-blue"
+                                    : "bg-blue-gray"
                             }`}
                         ></div>
                     ))}
