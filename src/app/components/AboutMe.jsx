@@ -1,12 +1,16 @@
 "use client";
 
+import useTypewriter from "../hooks/useTypewriter";
+
 export default function AboutMe() {
+    const greetingText = useTypewriter(`Hey, I'm Phil!`, 100);
+
     return (
         <>
             <article>
                 <h2 className="text-center text-lg">About Me</h2>
                 <section className="text-pretty m-4">
-                    <p>Hey, I&apos;m Phil!</p>
+                    <p>{greetingText}</p>
                     <p>
                         London-based JavaScript developer skilled in React,
                         Node.js/Express.js and Next.js developlment.
