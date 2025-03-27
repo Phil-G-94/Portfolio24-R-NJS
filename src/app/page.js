@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import "./globals.css";
 import Navigation from "./components/Navigation";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
     return (
@@ -17,7 +18,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 gap-28 md:grid-cols-4">
                     <section
                         id="about-me"
-                        className="col-span-full  md:col-start-2 md:col-end-4"
+                        className="col-span-full md:col-start-2 md:col-end-4"
                     >
                         <AboutMe />
                     </section>
@@ -36,6 +37,7 @@ export default function Home() {
                         className="col-span-full md:col-start-2 md:col-end-4"
                     >
                         <Contact />
+                        <ScrollToTop />
                     </footer>
                 </div>
             </main>

@@ -12,6 +12,7 @@ module.exports = {
         extend: {
             colors: {
                 "barn-red": "#780000",
+                "barn-red-light": "#99190d",
                 "fire-brick": "#C1121F",
                 "papaya-whip": "#FDF0D5",
                 "prussian-blue": "#003049",

@@ -2,8 +2,9 @@ import data from "@/app/data/projects.json";
 import ProjectDetail from "@/app/components/ProjectDetail";
 
 export async function generateStaticParams() {
-
-    const params = data.map((project) => ({ projectId: project.id.toString() }));
+    const params = data.map((project) => ({
+        projectId: project.id.toString(),
+    }));
 
     return params.map((param) => ({ params: param }));
 }
