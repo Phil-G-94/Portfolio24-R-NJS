@@ -17,6 +17,8 @@ export default function ProjectsCarousel({ projects }) {
         );
     };
 
+    const iconVariant = "plain";
+
     return (
         <>
             <article>
@@ -36,6 +38,16 @@ export default function ProjectsCarousel({ projects }) {
                             <p className="overflow-hidden text-ellipsis line-clamp-2 text-center">
                                 {projects[currentIndex].description}
                             </p>
+                            <div className="flex flex-row justify-center gap-4 p-2">
+                                {projects[currentIndex].stack.map((item) => {
+                                    return (
+                                        <i
+                                            key={item}
+                                            className={`devicon-${item}-plain colored text-2xl`}
+                                        ></i>
+                                    );
+                                })}
+                            </div>
                         </div>
                     </Link>
 
