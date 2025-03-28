@@ -10,7 +10,7 @@ export default function AboutMe() {
             <article>
                 <h2 className="text-center text-lg">About Me</h2>
                 <section className="text-pretty m-4">
-                    <p>{greetingText}</p>
+                    <p className="min-h-[24px]">{greetingText}</p>
                     <p>
                         London-based JavaScript developer skilled in React,
                         Node.js/Express.js and Next.js developlment.
