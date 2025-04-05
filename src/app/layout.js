@@ -15,6 +15,8 @@ export default function RootLayout({ children }) {
                     rel="stylesheet"
                     href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
                 ></link>
+
+                <meta name="apple-mobile-web-app-title" content="Portfolio" />
             </head>
             <body className={inter.className}>{children}</body>
         </html>
