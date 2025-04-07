@@ -31,11 +31,11 @@ export default function ProjectsCarousel({ projects }) {
                         key={projects[currentIndex].id}
                         href={`/projects/${projects[currentIndex].id}`}
                     >
-                        <div className="flex flex-col justify-center border-solid border-2 border-prussian-blue rounded-lg p-2 w-96 h-40 shadow-black shadow-md">
-                            <h3 className="text-center">
+                        <div className="flex flex-col justify-center gap-1 border-solid border-2 border-prussian-blue rounded-lg p-1 w-48 md:w-96 h-40 shadow-black shadow-md">
+                            <h3 className="text-center text-sm">
                                 {projects[currentIndex].title}
                             </h3>
-                            <p className="overflow-hidden text-ellipsis line-clamp-2 text-center">
+                            <p className="overflow-hidden text-ellipsis line-clamp-2 text-center text-sm">
                                 {projects[currentIndex].description}
                             </p>
                             <div className="flex flex-row justify-center gap-4 p-2">

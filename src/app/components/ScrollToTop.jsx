@@ -22,7 +22,7 @@ export default function ScrollToTop() {
 
     useEffect(() => {
         const handleScroll = debounce(() => {
-            setShow(window.scrollY > 150);
+            setShow(window.scrollY > 200);
         }, 200);
 
         window.addEventListener("scroll", handleScroll, { passive: true });
@@ -35,10 +35,11 @@ export default function ScrollToTop() {
     };
 
     return (
-        <section className="flex flex-row justify-end">
+        <section className="flex flex-row justify-center md:justify-end">
             <button
-                className={`hover-container fixed flex items-center justify-center bottom-1 right-1 rounded-full bg-barn-red hover:bg-barn-red-light transition-all w-12 h-12 cursor-pointer ${show ? "opacity-100" : "opacity-0"} `}
+                className={`hover:drop-shadow-lg active:scale-110 md:size-10 lg:size-12 fixed flex items-center justify-center bottom-1 right-1 rounded-full bg-barn-red hover:bg-barn-red-light transition-all size-8  cursor-pointer disabled:cursor-default ${show ? "opacity-65" : "opacity-0"}`}
                 onClick={scrollToTop}
+                disabled={!show}
             >
                 <ChevronUpIcon className="size-8 stroke-papaya-whip" />
             </button>

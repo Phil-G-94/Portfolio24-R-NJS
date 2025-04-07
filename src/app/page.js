@@ -9,8 +9,10 @@ import ScrollToTop from "./components/ScrollToTop";
 export default function Home() {
     return (
         <>
-            <header className="flex flex-row justify-between bg-prussian-blue p-6">
-                <h1 className="text-4xl text-papaya-whip">Phil Georgiou</h1>
+            <header className="flex justify-between bg-prussian-blue p-6">
+                <h1 className="text-2xl md:text-4xl text-papaya-whip">
+                    Phil Georgiou
+                </h1>
                 <Navigation />
             </header>
 
