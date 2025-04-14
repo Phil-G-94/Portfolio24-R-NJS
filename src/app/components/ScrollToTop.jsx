@@ -22,7 +22,7 @@ export default function ScrollToTop() {
 
     useEffect(() => {
         const handleScroll = debounce(() => {
-            setShow(window.scrollY > 200);
+            setShow(window.scrollY > 125);
         }, 200);
 
         window.addEventListener("scroll", handleScroll, { passive: true });

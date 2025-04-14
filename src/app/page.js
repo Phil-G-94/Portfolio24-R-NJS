@@ -17,7 +17,7 @@ export default function Home() {
             </header>
 
             <main className="container mx-auto mt-10">
-                <div className="grid grid-cols-1 gap-28 md:grid-cols-4">
+                <div className="grid grid-cols-1 gap-28 md:grid-cols-4 md:gap-48">
                     <section
                         id="about-me"
                         className="col-span-full md:col-start-2 md:col-end-4"
