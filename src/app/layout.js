@@ -1,5 +1,6 @@
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 const inter = Roboto_Mono({ subsets: ["latin"] });
 
@@ -19,7 +20,10 @@ export default function RootLayout({ children }) {
 
                 <meta name="apple-mobile-web-app-title" content="Portfolio" />
             </head>
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                {children}
+                <ScrollToTop />
+            </body>
         </html>
     );
 }

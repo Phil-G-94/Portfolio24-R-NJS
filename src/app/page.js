@@ -38,7 +38,6 @@ export default function Home() {
                         className="col-span-full md:col-start-2 md:col-end-4"
                     >
                         <Contact />
-                        <ScrollToTop />
                     </footer>
                 </div>
             </main>
