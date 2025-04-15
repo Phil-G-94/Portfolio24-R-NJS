@@ -2,7 +2,6 @@ import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
-import "./globals.css";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
 

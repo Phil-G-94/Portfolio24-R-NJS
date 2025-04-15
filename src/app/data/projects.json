@@ -3,7 +3,8 @@
         "id": 1,
         "title": "Personal Portfolio",
         "description": "A personal website showcasing my work.",
-        "image": "/images/portfolio.png",
+        "desktop-image": "/images/portfolio.png",
+        "mobile-image": "/images/portfolio.png",
         "link": "https://example.com",
         "stack": ["react", "tailwindcss", "nextjs"]
     },
@@ -11,7 +12,8 @@
         "id": 2,
         "title": "Q&A Platform",
         "description": "A forum-style Q&A app built with Next.js.",
-        "image": "/images/qa-platform.png",
+        "desktop-image": "/images/qa-platform.png",
+        "mobile-image": "/images/qa-platform.png",
         "link": "https://qa-platform.example.com",
         "stack": ["react", "tailwindcss", "nodejs", "mongodb"]
     },
@@ -19,8 +21,18 @@
         "id": 3,
         "title": "Pricing Portal",
         "description": "See above",
-        "image": "/images/qa-platform.png",
+        "desktop-image": "/images/qa-platform.png",
+        "mobile-image": "/images/qa-platform.png",
         "link": "https://qa-platform.example.com",
         "stack": ["react", "css3", "nodejs", "mongodb"]
+    },
+    {
+        "id": 4,
+        "title": "GitHubDash",
+        "description": "Dashboard showing top repositories and activity. Built using the GitHub API.",
+        "desktop-image": "/images/githubdash_screely_desktop.png",
+        "mobile-image": "/images/githubdash_screely_mobile.png",
+        "link": "https://github-dash-pg.netlify.app/",
+        "stack": ["react", "tailwindcss", "chart.js"]
     }
 ]
