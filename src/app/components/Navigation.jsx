@@ -12,14 +12,6 @@ export default function Navigation() {
                 <li>
                     <a
                         className="text-papaya-whip hover:underline decoration-barn-red decoration-4 underline-offset-8"
-                        href="#about-me"
-                    >
-                        About Me
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="text-papaya-whip hover:underline decoration-barn-red decoration-4 underline-offset-8"
                         href="#projects"
                     >
                         Projects
@@ -49,18 +41,9 @@ export default function Navigation() {
             </span>
 
             <ul
-                className={`md:hidden relative  transition-all ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
+                className={`md:hidden relative transition-all ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
             >
-                <li>
-                    <a
-                        className="text-papaya-whip hover:underline decoration-barn-red decoration-2 underline-offset-4"
-                        href="#about-me"
-                        onClick={() => setIsOpen(false)}
-                    >
-                        About Me
-                    </a>
-                </li>
-                <li>
+                <li className="mx-2">
                     <a
                         className="text-papaya-whip hover:underline decoration-barn-red decoration-2 underline-offset-4"
                         href="#projects"
@@ -69,7 +52,7 @@ export default function Navigation() {
                         Projects
                     </a>
                 </li>
-                <li>
+                <li className="mx-2">
                     <a
                         className="text-papaya-whip hover:underline decoration-barn-red decoration-2 underline-offset-4"
                         href="#contact"

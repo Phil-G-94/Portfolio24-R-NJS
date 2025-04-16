@@ -2,16 +2,16 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { BackwardIcon } from "@heroicons/react/24/outline";
+import { HomeIcon } from "@heroicons/react/24/outline";
 
 export default function ProjectDetail({ project }) {
     return (
         <article className="flex flex-col place-items-center">
             <button>
                 <Link href="../">
-                    <BackwardIcon
+                    <HomeIcon
                         title="Back"
-                        className="size-10 stroke-barn-red-light"
+                        className="size-8 stroke-barn-red-light hover:scale-110 hover:drop-shadow-lg active:scale-125"
                     />
                 </Link>
             </button>

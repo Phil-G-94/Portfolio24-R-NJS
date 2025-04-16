@@ -9,21 +9,23 @@ export default function AboutMe() {
         <>
             <article>
                 <h2 className="text-center text-lg">About Me</h2>
-                <section className="text-pretty m-4">
-                    <p className="min-h-[24px]">{greetingText}</p>
-                    <p>
-                        London-based JavaScript developer skilled in React,
-                        Node.js/Express.js and Next.js developlment.
+                <section className="text-pretty p-2">
+                    <p className="min-h-[24px]">
+                        {greetingText}
+                        <span>👋🏼</span>
                     </p>
-                    <p>
-                        Comfortable working with SQL and noSQL databases, with
-                        or without the use of ORM tools.
+                    <p className="my-2">
+                        London-based JavaScript developer capable of working
+                        with vanilla JS, React, Next.js and Node.js/ExpressJS.
                     </p>
-                    <p>
+                    <p className="my-2">
+                        Comfortable with MongoDB and learning PostgreSQL - able
+                        to work with or without the use of ORMs.
+                    </p>
+                    <p className="my-2">
                         Passionate about crafting intuitive and seamless web
-                        experiences.
+                        experiences. Always keen to learn, and eager to improve.
                     </p>
-                    <p>Always keen to learn, and eager to contribute.</p>
                 </section>
             </article>
         </>

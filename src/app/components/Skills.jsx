@@ -3,7 +3,7 @@
 export default function Skills() {
     return (
         <article>
-            <h2 className="text-center text-lg">Skills</h2>
+            <h2 className="text-center text-lg opacity-0">Skills</h2>
             <section className="flex flex-row justify-center gap-4 m-4">
                 <svg
                     className="size-16"
