@@ -39,7 +39,7 @@ export default function ProjectDetail({ project }) {
                     {project.repo && (
                         <div className="flex flex-row gap-2">
                             <p>Repo</p>
-                            <Link href={project.link}>
+                            <Link href={project.repo}>
                                 <CodeBracketIcon
                                     title="Repo"
                                     className="size-6 hover:scale-110 hover:drop-shadow-lg"
