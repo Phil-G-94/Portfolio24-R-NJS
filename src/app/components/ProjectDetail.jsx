@@ -23,21 +23,25 @@ export default function ProjectDetail({ project }) {
             </section>
 
             <section>
-                <div className="grid grid-cols-1 gap-10 justify-items-center md:grid-cols-2">
-                    <Image
-                        src={project["desktop-image"]}
-                        alt="GitHubDash desktop view"
-                        width={800}
-                        height={800}
-                        priority={true}
-                    />
-                    <Image
-                        src={project["mobile-image"]}
-                        alt="GitHubDash mobile view"
-                        width={500}
-                        height={600}
-                        priority={true}
-                    />
+                <div className="grid grid-cols-1 grid-rows-1 gap-10 justify-items-center md:grid-cols-2">
+                    <div className="rounded-xl border border-gray-300 shadow-lg w-fit h-fit">
+                        <Image
+                            src={project["desktop-image"]}
+                            alt={project["desktop-alt"]}
+                            width={800}
+                            height={600}
+                            priority={true}
+                        />
+                    </div>
+                    <div className="rounded-xl border border-gray-300 shadow-lg w-fit h-fit">
+                        <Image
+                            src={project["mobile-image"]}
+                            alt={project["mobile-alt"]}
+                            width={500}
+                            height={250}
+                            priority={true}
+                        />
+                    </div>
                 </div>
             </section>
         </article>

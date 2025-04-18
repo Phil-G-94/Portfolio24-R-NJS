@@ -1,28 +1,34 @@
 [
     {
         "id": 1,
-        "title": "Personal Portfolio",
+        "title": "Portfolio Website",
         "description": "A personal website showcasing my work.",
-        "desktop-image": "/images/portfolio.png",
-        "mobile-image": "/images/portfolio.png",
+        "desktop-image": "/images/portfolio_screely_desktop.png",
+        "mobile-image": "/images/portfolio_screely_mobile.png",
+        "desktop-alt": "Portfolio desktop view",
+        "mobile-alt": "Portfolio mobile view",
         "link": "https://example.com",
         "stack": ["react", "tailwindcss", "nextjs"]
     },
     {
         "id": 2,
-        "title": "Q&A Platform",
+        "title": "OpenMat",
         "description": "A forum-style Q&A app built with Next.js.",
         "desktop-image": "/images/qa-platform.png",
         "mobile-image": "/images/qa-platform.png",
+        "desktop-alt": "OpenMat desktop view",
+        "mobile-alt": "OpenMat mobile view",
         "link": "https://qa-platform.example.com",
         "stack": ["react", "tailwindcss", "nodejs", "mongodb"]
     },
     {
         "id": 3,
-        "title": "Pricing Portal",
-        "description": "See above",
-        "desktop-image": "/images/qa-platform.png",
-        "mobile-image": "/images/qa-platform.png",
+        "title": "PricingPortal",
+        "description": "A pricing tool designed to help me issue quotes to clients quicker and with less room for error.",
+        "desktop-image": "/images/pricingportal_screely_desktop.png",
+        "mobile-image": "/images/pricingportal_screely_mobile.png",
+        "desktop-alt": "PricingPortal desktop view",
+        "mobile-alt": "PricingPortal mobile view",
         "link": "https://qa-platform.example.com",
         "stack": ["react", "css3", "nodejs", "mongodb"]
     },
@@ -32,6 +38,8 @@
         "description": "Dashboard showing top repositories and activity. Built using the GitHub API.",
         "desktop-image": "/images/githubdash_screely_desktop.png",
         "mobile-image": "/images/githubdash_screely_mobile.png",
+        "desktop-alt": "GitHubDash desktop view",
+        "mobile-alt": "GitHubDash mobile view",
         "link": "https://github-dash-pg.netlify.app/",
         "stack": ["react", "tailwindcss", "chart.js"]
     }
