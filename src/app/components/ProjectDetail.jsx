@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { HomeIcon } from "@heroicons/react/24/outline";
+import {
+    HomeIcon,
+    LinkIcon,
+    CodeBracketIcon,
+} from "@heroicons/react/24/outline";
 
 export default function ProjectDetail({ project }) {
     return (
@@ -18,8 +22,32 @@ export default function ProjectDetail({ project }) {
 
             <section className="p-2 flex flex-col gap-6">
                 <h2 className="text-xl text-center">{project.title}</h2>
-
                 <p className="text-pretty">{project.description}</p>
+                <div className="flex flex-row gap-6 place-content-center">
+                    {project.link && (
+                        <div className="flex flex-row gap-2">
+                            <p>App</p>
+                            <Link href={project.link}>
+                                <LinkIcon
+                                    title="Link"
+                                    className="size-6 hover:scale-110 hover:drop-shadow-lg"
+                                />
+                            </Link>
+                        </div>
+                    )}
+
+                    {project.repo && (
+                        <div className="flex flex-row gap-2">
+                            <p>Repo</p>
+                            <Link href={project.link}>
+                                <CodeBracketIcon
+                                    title="Repo"
+                                    className="size-6 hover:scale-110 hover:drop-shadow-lg"
+                                />
+                            </Link>
+                        </div>
+                    )}
+                </div>
             </section>
 
             <section>

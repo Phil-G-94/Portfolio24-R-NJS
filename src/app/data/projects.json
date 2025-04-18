@@ -2,23 +2,25 @@
     {
         "id": 1,
         "title": "Portfolio Website",
-        "description": "A personal website showcasing my work.",
+        "description": "This website!",
         "desktop-image": "/images/portfolio_screely_desktop.png",
-        "mobile-image": "/images/portfolio_screely_mobile.png",
+        "mobile-image": "/images/portfolio_screely_mobile.jpg",
         "desktop-alt": "Portfolio desktop view",
         "mobile-alt": "Portfolio mobile view",
-        "link": "https://example.com",
+        "link": null,
+        "repo": "https://github.com/Phil-G-94/Portfolio24-R-NJS",
         "stack": ["react", "tailwindcss", "nextjs"]
     },
     {
         "id": 2,
         "title": "OpenMat",
         "description": "A forum-style Q&A app built with Next.js.",
-        "desktop-image": "/images/qa-platform.png",
-        "mobile-image": "/images/qa-platform.png",
+        "desktop-image": "/images/openmat_screely_desktop.png",
+        "mobile-image": "/images/openmat_screely_desktop.png",
         "desktop-alt": "OpenMat desktop view",
         "mobile-alt": "OpenMat mobile view",
-        "link": "https://qa-platform.example.com",
+        "link": "https://openmat.onrender.com/",
+        "repo": "https://github.com/Phil-G-94/OpenMat",
         "stack": ["react", "tailwindcss", "nodejs", "mongodb"]
     },
     {
@@ -29,7 +31,8 @@
         "mobile-image": "/images/pricingportal_screely_mobile.png",
         "desktop-alt": "PricingPortal desktop view",
         "mobile-alt": "PricingPortal mobile view",
-        "link": "https://qa-platform.example.com",
+        "link": "https://pricingportal.netlify.app/",
+        "repo": "https://github.com/Phil-G-94/PricingPortal",
         "stack": ["react", "css3", "nodejs", "mongodb"]
     },
     {
@@ -41,6 +44,7 @@
         "desktop-alt": "GitHubDash desktop view",
         "mobile-alt": "GitHubDash mobile view",
         "link": "https://github-dash-pg.netlify.app/",
+        "repo": "https://github.com/Phil-G-94/GitHubDash",
         "stack": ["react", "tailwindcss", "chart.js"]
     }
 ]

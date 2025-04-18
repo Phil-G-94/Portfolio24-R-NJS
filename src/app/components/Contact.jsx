@@ -12,7 +12,7 @@ export default function Contact() {
                     <div className="flex flex-row justify-center gap-4">
                         <a
                             className="block text-sm text-center size-6 hover:scale-110 hover:drop-shadow-lg active:scale-125"
-                            href="mailto: &#112;&#104;&#105;&#108;&#105;&#112;&#112;&#111;&#115;&#103;&#101;&#111;&#114;&#103;&#105;&#111;&#117;&#55;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+                            href="mailto:&#109;&#101;&#64;&#112;&#104;&#105;&#108;&#45;&#103;&#101;&#111;&#114;&#103;&#105;&#111;&#117;&#46;&#100;&#101;&#118;"
                         >
                             <EnvelopeIcon />
                         </a>
