@@ -6,7 +6,7 @@ const inter = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata = {
     title: "Phil Georgiou | Developer",
-    description: "Powered By NextJS",
+    description: "Portfolio",
 };
 
 export default function RootLayout({ children }) {
