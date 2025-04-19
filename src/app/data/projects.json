@@ -2,7 +2,9 @@
     {
         "id": 1,
         "title": "Portfolio Website",
-        "description": "This website!",
+        "description": [
+            "This website! Written in vanilla JS using the React library and the NextJS React framework."
+        ],
         "desktop-image": "/images/portfolio_screely_desktop.png",
         "mobile-image": "/images/portfolio_screely_mobile.png",
         "desktop-alt": "Portfolio desktop view",
@@ -14,7 +16,12 @@
     {
         "id": 2,
         "title": "OpenMat",
-        "description": "A forum-style Q&A app built with Next.js.",
+        "description": [
+            "A forum-style Q&A app.",
+            "Written in TypeScript, it uses React + Vite for the frontend client and Node/ExpressJS framework for the backend server.",
+            "The database is MongoDB, used with Mongoose ORM.",
+            "Click the code icon to review the repo, or the link icon for a live demo!"
+        ],
         "desktop-image": "/images/openmat_screely_desktop.png",
         "mobile-image": "/images/openmat_screely_mobile.png",
         "desktop-alt": "OpenMat desktop view",
@@ -26,7 +33,12 @@
     {
         "id": 3,
         "title": "PricingPortal",
-        "description": "A pricing tool designed to help me issue quotes to clients quicker and with less room for error.",
+        "description": [
+            "A pricing tool designed to help me issue quotes to clients quicker and with less room for error.",
+            "Written in vanilla JS. Uses React + Vite on the frontend and Node/ExpressJS on the backend.",
+            "Database is pure MongoDB without the use of ORM.",
+            "Click the code icon to review the repo, or the link icon for a live demo!"
+        ],
         "desktop-image": "/images/pricingportal_screely_desktop.png",
         "mobile-image": "/images/pricingportal_screely_mobile.png",
         "desktop-alt": "PricingPortal desktop view",
@@ -38,7 +50,11 @@
     {
         "id": 4,
         "title": "GitHubDash",
-        "description": "Dashboard showing top repositories and activity. Built using the GitHub API.",
+        "description": [
+            "Dashboard showing top repositories and activity.",
+            "Vanilla JS with React + Vite for tooling.",
+            "Click the code icon to review the repo, or the link icon for a live demo!"
+        ],
         "desktop-image": "/images/githubdash_screely_desktop.png",
         "mobile-image": "/images/githubdash_screely_mobile.png",
         "desktop-alt": "GitHubDash desktop view",

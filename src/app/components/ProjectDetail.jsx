@@ -22,12 +22,18 @@ export default function ProjectDetail({ project }) {
 
             <section className="p-2 flex flex-col gap-6">
                 <h2 className="text-xl text-center">{project.title}</h2>
-                <p className="text-pretty">{project.description}</p>
+
+                {project.description.map((para, i) => (
+                    <p key={i} className="mb-2 text-pretty">
+                        {para}
+                    </p>
+                ))}
+
                 <div className="flex flex-row gap-6 place-content-center">
                     {project.link && (
                         <div className="flex flex-row gap-2">
                             <p>App</p>
-                            <Link href={project.link}>
+                            <Link href={project.link} target="_blank">
                                 <LinkIcon
                                     title="Link"
                                     className="size-6 hover:scale-110 hover:drop-shadow-lg"
@@ -39,7 +45,7 @@ export default function ProjectDetail({ project }) {
                     {project.repo && (
                         <div className="flex flex-row gap-2">
                             <p>Repo</p>
-                            <Link href={project.repo}>
+                            <Link href={project.repo} target="_blank">
                                 <CodeBracketIcon
                                     title="Repo"
                                     className="size-6 hover:scale-110 hover:drop-shadow-lg"
@@ -58,7 +64,7 @@ export default function ProjectDetail({ project }) {
                         alt={project["desktop-alt"]}
                         width={600}
                         height={400}
-                        priority={true}
+                        loading="eager"
                     />
 
                     <Image
@@ -67,7 +73,7 @@ export default function ProjectDetail({ project }) {
                         alt={project["mobile-alt"]}
                         width={600}
                         height={300}
-                        priority={true}
+                        loading="eager"
                     />
                 </div>
             </section>
