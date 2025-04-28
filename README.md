@@ -4,6 +4,10 @@
 
 ---
 
+## <img src="https://gist.githubusercontent.com/Phil-G-94/b0921d2344ee81afb6b7a4c8881f3803/raw/d59ec2cc780d776a946c11afbd94eee3ffbcc0cb/plug.svg" /> Deployment
+
+[Demo](https://www.phil-georgiou.dev/)
+
 ## <img src="https://gist.githubusercontent.com/Phil-G-94/b0921d2344ee81afb6b7a4c8881f3803/raw/d59ec2cc780d776a946c11afbd94eee3ffbcc0cb/folder.svg" /> Project Structure 
 
 ```txt
@@ -19,19 +23,13 @@ Portfolio24-R-NJS/
 - React
 - NextJS
 
-## <img src="https://gist.githubusercontent.com/Phil-G-94/b0921d2344ee81afb6b7a4c8881f3803/raw/d59ec2cc780d776a946c11afbd94eee3ffbcc0cb/cog.svg" /> Environment Variables
-
 ## <img src="https://gist.githubusercontent.com/Phil-G-94/b0921d2344ee81afb6b7a4c8881f3803/raw/d59ec2cc780d776a946c11afbd94eee3ffbcc0cb/laptop.svg" /> Getting Started
 
 Run `npm install` inside root directory to install project dependancies
 
 Run `npm run dev` inside root directory to access the application using the NextJS development server
 
-Run `npm run start` inside root directory to start the NextJS application
-
-## <img src="https://gist.githubusercontent.com/Phil-G-94/b0921d2344ee81afb6b7a4c8881f3803/raw/d59ec2cc780d776a946c11afbd94eee3ffbcc0cb/plug.svg" /> Deployment
-
-[Demo](https://www.phil-georgiou.dev/)
+Run `npm run start` inside root directory to start the NextJS application in production
 
 ## <img src="https://gist.githubusercontent.com/Phil-G-94/b0921d2344ee81afb6b7a4c8881f3803/raw/d59ec2cc780d776a946c11afbd94eee3ffbcc0cb/creative-commons.svg" /> License
 
