@@ -20,7 +20,7 @@ export default function AboutMe() {
                     </p>
                     <p className="my-2 md:text-lg">
                         Comfortable with MongoDB and learning PostgreSQL - able
-                        to work with or without the use of ORMs.
+                        to work with or without the use of ORM/ODM tools.
                     </p>
                     <p className="my-2 md:text-lg">
                         Passionate about crafting intuitive and seamless web
