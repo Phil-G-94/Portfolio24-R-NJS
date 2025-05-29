@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Portfolio Website",
+        "title": "Personal Website",
         "description": [
             "This website! Written in vanilla JS using the React library and the NextJS React framework."
         ],
