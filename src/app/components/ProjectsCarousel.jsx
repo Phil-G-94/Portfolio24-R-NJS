@@ -17,8 +17,6 @@ export default function ProjectsCarousel({ projects }) {
         );
     };
 
-    const iconVariant = "plain";
-
     return (
         <>
             <article>
