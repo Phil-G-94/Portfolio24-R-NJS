@@ -1,27 +1,20 @@
 [
     {
         "id": 1,
-        "title": "Personal Website",
-        "description": [
-            "This website! Written in vanilla JS using the React library and the NextJS React framework."
-        ],
-        "desktop-image": "/images/portfolio_screely_desktop.png",
-        "mobile-image": "/images/portfolio_screely_mobile.png",
-        "desktop-alt": "Portfolio desktop view",
-        "mobile-alt": "Portfolio mobile view",
-        "link": null,
-        "repo": "https://github.com/Phil-G-94/Portfolio24-R-NJS",
-        "stack": ["react", "tailwindcss", "nextjs"]
+        "title": "PricingPortal",
+        "description": ["A pricing tool for quoting bespoke server hardware."],
+        "desktop-image": "/images/pricingportal_screely_desktop.png",
+        "mobile-image": "/images/pricingportal_screely_mobile.png",
+        "desktop-alt": "PricingPortal desktop view",
+        "mobile-alt": "PricingPortal mobile view",
+        "link": "https://pricingportal.netlify.app/",
+        "repo": "https://github.com/Phil-G-94/PricingPortal",
+        "stack": ["react", "tailwindcss", "nodejs", "mongodb"]
     },
     {
         "id": 2,
         "title": "OpenMat",
-        "description": [
-            "A forum-style Q&A app.",
-            "Written in TypeScript, it uses React + Vite for the frontend client and Node/ExpressJS framework for the backend server.",
-            "The database is MongoDB, used with Mongoose ORM.",
-            "Click the code icon to review the repo, or the link icon for a live demo!"
-        ],
+        "description": ["A forum-style Q&A app."],
         "desktop-image": "/images/openmat_screely_desktop.png",
         "mobile-image": "/images/openmat_screely_mobile.png",
         "desktop-alt": "OpenMat desktop view",
@@ -32,29 +25,8 @@
     },
     {
         "id": 3,
-        "title": "PricingPortal",
-        "description": [
-            "A pricing tool designed to help me issue quotes to clients quicker and with less room for error.",
-            "Written in vanilla JS. Uses React + Vite on the frontend and Node/ExpressJS on the backend.",
-            "Database is pure MongoDB without the use of ORM.",
-            "Click the code icon to review the repo, or the link icon for a live demo!"
-        ],
-        "desktop-image": "/images/pricingportal_screely_desktop.png",
-        "mobile-image": "/images/pricingportal_screely_mobile.png",
-        "desktop-alt": "PricingPortal desktop view",
-        "mobile-alt": "PricingPortal mobile view",
-        "link": "https://pricingportal.netlify.app/",
-        "repo": "https://github.com/Phil-G-94/PricingPortal",
-        "stack": ["react", "css3", "nodejs", "mongodb"]
-    },
-    {
-        "id": 4,
         "title": "GitHubDash",
-        "description": [
-            "Dashboard showing top repositories and activity.",
-            "Vanilla JS with React + Vite for tooling.",
-            "Click the code icon to review the repo, or the link icon for a live demo!"
-        ],
+        "description": ["Dashboard showing top repositories and activity."],
         "desktop-image": "/images/githubdash_screely_desktop.png",
         "mobile-image": "/images/githubdash_screely_mobile.png",
         "desktop-alt": "GitHubDash desktop view",
@@ -62,5 +34,17 @@
         "link": "https://github-dash-pg.netlify.app/",
         "repo": "https://github.com/Phil-G-94/GitHubDash",
         "stack": ["react", "tailwindcss", "chart.js"]
+    },
+    {
+        "id": 4,
+        "title": "Personal Website",
+        "description": ["This website!"],
+        "desktop-image": "/images/portfolio_screely_desktop.png",
+        "mobile-image": "/images/portfolio_screely_mobile.png",
+        "desktop-alt": "Portfolio desktop view",
+        "mobile-alt": "Portfolio mobile view",
+        "link": null,
+        "repo": "https://github.com/Phil-G-94/Portfolio24-R-NJS",
+        "stack": ["react", "tailwindcss", "nextjs"]
     }
 ]
