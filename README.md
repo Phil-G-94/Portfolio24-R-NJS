@@ -8,7 +8,7 @@
 
 [Demo](https://www.phil-georgiou.dev/)
 
-## <img src="https://gist.githubusercontent.com/Phil-G-94/b0921d2344ee81afb6b7a4c8881f3803/raw/d59ec2cc780d776a946c11afbd94eee3ffbcc0cb/folder.svg" /> Project Structure 
+## <img src="https://gist.githubusercontent.com/Phil-G-94/b0921d2344ee81afb6b7a4c8881f3803/raw/d59ec2cc780d776a946c11afbd94eee3ffbcc0cb/folder.svg" /> Project Structure
 
 ```txt
 Portfolio24-R-NJS/

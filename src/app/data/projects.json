@@ -1,50 +1,50 @@
 [
-    {
-        "id": 1,
-        "title": "PricingPortal",
-        "description": ["A pricing tool for quoting bespoke server hardware."],
-        "desktop-image": "/images/pricingportal_screely_desktop.png",
-        "mobile-image": "/images/pricingportal_screely_mobile.png",
-        "desktop-alt": "PricingPortal desktop view",
-        "mobile-alt": "PricingPortal mobile view",
-        "link": "https://pricingportal.netlify.app/",
-        "repo": "https://github.com/Phil-G-94/PricingPortal",
-        "stack": ["react", "tailwindcss", "nodejs", "mongodb"]
-    },
-    {
-        "id": 2,
-        "title": "OpenMat",
-        "description": ["A forum-style Q&A app."],
-        "desktop-image": "/images/openmat_screely_desktop.png",
-        "mobile-image": "/images/openmat_screely_mobile.png",
-        "desktop-alt": "OpenMat desktop view",
-        "mobile-alt": "OpenMat mobile view",
-        "link": "https://openmat.onrender.com/",
-        "repo": "https://github.com/Phil-G-94/OpenMat",
-        "stack": ["react", "tailwindcss", "nodejs", "mongodb"]
-    },
-    {
-        "id": 3,
-        "title": "GitHubDash",
-        "description": ["Dashboard showing top repositories and activity."],
-        "desktop-image": "/images/githubdash_screely_desktop.png",
-        "mobile-image": "/images/githubdash_screely_mobile.png",
-        "desktop-alt": "GitHubDash desktop view",
-        "mobile-alt": "GitHubDash mobile view",
-        "link": "https://github-dash-pg.netlify.app/",
-        "repo": "https://github.com/Phil-G-94/GitHubDash",
-        "stack": ["react", "tailwindcss", "chart.js"]
-    },
-    {
-        "id": 4,
-        "title": "Personal Website",
-        "description": ["This website!"],
-        "desktop-image": "/images/portfolio_screely_desktop.png",
-        "mobile-image": "/images/portfolio_screely_mobile.png",
-        "desktop-alt": "Portfolio desktop view",
-        "mobile-alt": "Portfolio mobile view",
-        "link": null,
-        "repo": "https://github.com/Phil-G-94/Portfolio24-R-NJS",
-        "stack": ["react", "tailwindcss", "nextjs"]
-    }
+  {
+    "id": 1,
+    "title": "PricingPortal",
+    "description": ["A pricing tool for quoting bespoke server hardware."],
+    "desktop-image": "/images/pricingportal_screely_desktop.png",
+    "mobile-image": "/images/pricingportal_screely_mobile.png",
+    "desktop-alt": "PricingPortal desktop view",
+    "mobile-alt": "PricingPortal mobile view",
+    "link": "https://pricingportal.netlify.app/",
+    "repo": "https://github.com/Phil-G-94/PricingPortal",
+    "stack": ["react", "tailwindcss", "nodejs", "mongodb"]
+  },
+  {
+    "id": 2,
+    "title": "OpenMat",
+    "description": ["A forum-style Q&A app."],
+    "desktop-image": "/images/openmat_screely_desktop.png",
+    "mobile-image": "/images/openmat_screely_mobile.png",
+    "desktop-alt": "OpenMat desktop view",
+    "mobile-alt": "OpenMat mobile view",
+    "link": "https://openmat.onrender.com/",
+    "repo": "https://github.com/Phil-G-94/OpenMat",
+    "stack": ["react", "tailwindcss", "nodejs", "mongodb"]
+  },
+  {
+    "id": 3,
+    "title": "GitHubDash",
+    "description": ["Dashboard showing top repositories and activity."],
+    "desktop-image": "/images/githubdash_screely_desktop.png",
+    "mobile-image": "/images/githubdash_screely_mobile.png",
+    "desktop-alt": "GitHubDash desktop view",
+    "mobile-alt": "GitHubDash mobile view",
+    "link": "https://github-dash-pg.netlify.app/",
+    "repo": "https://github.com/Phil-G-94/GitHubDash",
+    "stack": ["react", "tailwindcss", "chart.js"]
+  },
+  {
+    "id": 4,
+    "title": "Personal Website",
+    "description": ["This website!"],
+    "desktop-image": "/images/portfolio_screely_desktop.png",
+    "mobile-image": "/images/portfolio_screely_mobile.png",
+    "desktop-alt": "Portfolio desktop view",
+    "mobile-alt": "Portfolio mobile view",
+    "link": null,
+    "repo": "https://github.com/Phil-G-94/Portfolio24-R-NJS",
+    "stack": ["react", "tailwindcss", "nextjs"]
+  }
 ]
