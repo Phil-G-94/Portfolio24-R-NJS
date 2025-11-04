@@ -7,7 +7,7 @@ import Navigation from "./components/Navigation";
 export default function Home() {
   return (
     <>
-      <header className="flex justify-between p-6">
+      <header className="flex justify-evenly">
         <h1 className="text-2xl md:text-4xl text-papaya-whip">Phil Georgiou</h1>
         <Navigation />
       </header>
