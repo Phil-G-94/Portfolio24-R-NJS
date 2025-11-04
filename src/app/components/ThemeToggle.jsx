@@ -11,9 +11,9 @@ export default function ThemeToggle() {
       <span className="sr-only">Toggle theme</span>
 
       {theme === "dark" ? (
-        <MoonIcon className="w-4 h-4 text-dpurple dark:text-afwhite" />
+        <MoonIcon className="w-6 h-6 dark:text-slate-500 " />
       ) : (
-        <SunIcon className="w-4 h-4 text-dpurple dark:text-afwhite" />
+        <SunIcon className="w-6 h-6 text-amber-500" />
       )}
     </button>
   );
